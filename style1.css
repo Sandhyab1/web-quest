@@ -178,11 +178,11 @@ body{
         padding-top:15px;
         letter-spacing: 2px;
         word-spacing: 1px;
-        font-size: 12px;
+        font-size: 13px;
     }
     .shake-lr{
         padding-top: 6px;
-        font-size: 10px;
+        font-size: 14px;
         letter-spacing: 2px;
         word-wrap: break-word;
 
@@ -197,7 +197,7 @@ body{
 .make{
     font-family: 'KoHo', sans-serif;
     letter-spacing: 1px;
-    font-size:13px;
+    font-size:14px;
     text-decoration: underline;
 
   }
