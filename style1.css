@@ -143,6 +143,7 @@ body{
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 40px;
+    padding-top: 9px;
     margin-bottom: 20px;
     text-align: justify;
     font-family: 'Athiti', sans-serif;
@@ -227,7 +228,7 @@ body{
         padding-top:15px;
         letter-spacing: 2px;
         word-spacing: 1px;
-        font-size: 13px;
+        font-size: 14px;
        
     }
     .shake-lr{
@@ -239,7 +240,7 @@ body{
     }
     .logo
 {
-    height: 50px;
+    height: 70px;
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 15px;
@@ -247,13 +248,18 @@ body{
 .make{
     font-family: 'KoHo', sans-serif;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 17px;
     text-decoration: underline;
 
   }
   #main{
       width:100vw;
   }
+  .sector-name{
+      font-size: 34px;
+     
+  }
+
   .sector{
     text-align: center;
     margin-right:0px ;
