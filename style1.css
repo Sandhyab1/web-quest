@@ -9,6 +9,10 @@ font-family: 'Sacramento', cursive;
 font-family: 'Ubuntu Mono', monospace;
 */
 
+html{
+    scroll-behavior:smooth; 
+}
+
 *{
     padding: 0px;
     margin:0px;
@@ -16,7 +20,6 @@ font-family: 'Ubuntu Mono', monospace;
 }
 body{
     width:100%;
-    overflow-x:hidden;                               /*  unnecessary code*/
 }
 
 
@@ -30,7 +33,6 @@ body{
     border-bottom:3px solid rgb(77, 109, 4);
     background-color:  #5ca08e;
 }
-
 .logo
 {
     height: 100px;
@@ -45,14 +47,13 @@ body{
     padding-top:25px;
     letter-spacing: 5px;
     word-spacing: 4px;
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
-
 }
 
  .shake-lr{
     padding-top: 19px;
-    font-size: 30px;
+    font-size: 34px;
     letter-spacing: 9px;
 }
 
@@ -61,8 +62,8 @@ body{
     text-align: center;
     margin-top: 15px;
     padding-top:30px;
-    border-top:5px inherit rgb(77, 109, 4);       /*      unnecesaay code     */
-    border-bottom:5px inherit rgb(77, 109, 4);      /*    unnecesaay code     */
+ /*   border-top:5px inherit rgb(77, 109, 4);
+    border-bottom:5px inherit rgb(77, 109, 4);    */
     background-color: #9dc183;
 }
 .intro-para
@@ -71,30 +72,26 @@ body{
     padding-left: 40px;
     padding-right: 40px;
     font-family: 'Athiti', sans-serif;
-    font-weight: bolder !important;
+    font-weight: bolder;
     text-align: justify;
 }
-
 
 .make{
     font-family: 'KoHo', sans-serif;
     letter-spacing: 2px;
-    font-size:25px;
+    font-size:22px;
     text-decoration: underline;
+}
 
+.highlight{
+    font-family: 'KoHo', sans-serif;
+    letter-spacing: 2px;
+    font-size:28px;
+    text-decoration: underline;
 }
 
 #main{
     background-image: linear-gradient(-78deg,rgb(219, 219, 155) ,#c9dfc8 );
-}
- .header                                                               /*  unwanted class selector that can be removed*/
-{
-    background-color:  #16ebe0;
-    padding-top: 0px;
-    display: grid;
-    flex-direction: row;
-    border-bottom:60px solid rgb(77, 109, 4);
-    
 }
 
 .heading{
@@ -123,20 +120,14 @@ body{
     
     
 }
-.sector:nth-child(even)                                               /* unwanted nth-child*/
-{
-    text-align: center;
-    padding-right: 0px;
-    text-emphasis: none;
-    color: rgb(17, 16, 16);
-    align-items: center;
-    margin-bottom: 30px;
-}
 .sector-name
 {
     font-family:'Dongle', sans-serif ;
     font-size: 40px;
     margin: 0;
+}
+.toy{
+    border-style: none;
 }
 .content
 {
@@ -150,20 +141,10 @@ body{
     font-weight:bold;
 
 }
-.main{                                                                               /*   unwanted class selector that can be removed*/
-    background-image: linear-gradient(-78deg,rgb(214, 214, 199) ,#8dc08a );
-    background-color: transparent;
-    position:relative;
-    align-items: center;
-}
 
 .image{
     width:300px;
     height:200px;
-}
-
-.toy{
-    border-style: none;
 }
 
 #conclusion
@@ -171,27 +152,29 @@ body{
     text-align: center;
     border-top:5px double rgb(77, 109, 4);  
     background-color: #9dc183;
-    padding-top: 30px;
-}
-
-.intro-para{                                         /*unnecessary duplication of class*/
-    word-wrap: break-word;
-    justify-content:space-evenly;
-    font-weight:700;
-}
-
-.image{                                                              /* unnecessary code  */
-    filter: opacity(1);
+	padding-top: 30px;
 }
 
 .text .shake-lr {
 	animation: shake-lr 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000) 0.2s alternate forwards;
 }
- 
-.toy::before{                                           /* unnecessary pseudo selector code */
-    content: "Im invisible";
-    display: none;
-    
+
+#to-top{
+    position:fixed;
+    bottom:22px;
+    right:18px;
+    font-size:30px;
+    color:#066661;
+    border-radius: 50%;
+    background-color: rgb(141, 135, 135);
+    height:50px;
+    width:50px;
+    line-height: 50px;
+    filter: opacity(0.5);
+    text-align: center;
+}
+#to-top:hover{
+    transform:scale(1.2) ;
 }
 
 @keyframes shake-lr {
@@ -229,11 +212,10 @@ body{
         letter-spacing: 2px;
         word-spacing: 1px;
         font-size: 14px;
-       
     }
     .shake-lr{
         padding-top: 6px;
-        font-size: 16px;
+        font-size: 17px;
         letter-spacing: 2px;
         word-wrap: break-word;
 
@@ -248,18 +230,26 @@ body{
 .make{
     font-family: 'KoHo', sans-serif;
     letter-spacing: 1px;
-    font-size: 17px;
+    font-size:17px;
     text-decoration: underline;
 
   }
+
+  .highlight{
+    font-family: 'KoHo', sans-serif;
+    letter-spacing: 2px;
+    font-size:19px;
+    text-decoration: underline;
+}
+
   #main{
       width:100vw;
   }
-  .sector-name{
-      font-size: 34px;
-     
-  }
 
+  .sector-name{
+    font-size: 34px;
+   
+}
   .sector{
     text-align: center;
     margin-right:0px ;
@@ -274,11 +264,8 @@ body{
     width:190px;
     height:200px;
 }
-.toy{
-    border-style: none;                              /* unnecessary code that can be removed */
-}
 
 #conclusion{
     padding-top: 20px;
-}
   }
+}
